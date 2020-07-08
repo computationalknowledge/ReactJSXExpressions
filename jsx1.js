@@ -9,7 +9,7 @@ class Greeting extends React.Component {
 
 class LikeCounter extends React.Component {
   render() {
-    return <div>LikeCounter</div>;
+    return <div> onclick={() => alert("1 clap")} ClapCounter</div>;
   }
 }
 
@@ -26,6 +26,7 @@ const where = document.getElementById("root");
 // ReactDOM.render(what, where);
 
 // ReactDOM.render(<Greeting />, where);
-ReactDOM.render(<Greeting firstname="Mike" />, where);
+//  ReactDOM.render(<Greeting firstname="Mike" />, where);
 
-//  ReactDOM.render(<LikeCounter />, where);
+// how to put a click handler on our JSX expression?
+ReactDOM.render(<LikeCounter />, where);
